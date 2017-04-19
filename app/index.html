@@ -28,7 +28,6 @@
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -38,7 +37,6 @@
         </button>
         <a class="navbar-brand" href="#">kino GaRage</a>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li>
@@ -64,9 +62,7 @@
           </div>
         </div>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
   </nav>
 
   <!-- Page Content -->
@@ -80,14 +76,23 @@
       </p>
     </header>
 
+
+    <!-- Search -->
+    <div class="row text-center">
+
+      <form class="input-group" ng-submit="vm.search()">
+        <input type="text" class="form-control" placeholder="Search for..."
+               ng-model="vm.inputVal" ng-keydown="vm.searchQuery = vm.inputVal">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary glyphicon glyphicon-search" type="submit"></button>
+        </span>
+      </form>
+
+    </div>
+
+
     <div>
       <h2>Lorem ipsum dolor sit.</h2>
-      <ul>
-        <li ng-repeat="person in persons">
-          {{person.name + ':' + person.age}}
-        </li>
-
-      </ul>
     </div>
 
     <hr>
@@ -98,65 +103,29 @@
         <h3>Latest Features</h3>
       </div>
     </div>
-    <!-- /.row -->
 
-    <!-- Page Features -->
-    <div class="row text-center">
 
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://placehold.it/800x500" alt="">
-          <div class="caption">
-            <h3>Feature Label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>
-              <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-            </p>
-          </div>
+    <div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <img ng-src="{{post.Poster}}" alt="">
+        <div class="caption">
+          <h3>{{post.Title}}</h3>
+          <span>Year: {{post.Year}}</span>
+          <span>Runtime: {{post.Runtime}}</span>
+          <span>Genre: {{post.Genre}}</span>
+          <span>Director: {{post.Director}}</span>
+          <span>Actors: {{post.Actors}}</span>
+          <span>Plot: {{post.Plot}}</span>
+          <span>Country: {{post.Country}}</span>
+          <span>imdbRating: {{post.imdbRating}}</span>
+          <span>Production: {{post.Production}}</span>
+          <p>
+            <a href="#" class="btn btn-primary">Watch</a> <a href="#" class="btn btn-default">More Info</a>
+          </p>
         </div>
       </div>
-
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://placehold.it/800x500" alt="">
-          <div class="caption">
-            <h3>Feature Label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>
-              <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://placehold.it/800x500" alt="">
-          <div class="caption">
-            <h3>Feature Label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>
-              <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://placehold.it/800x500" alt="">
-          <div class="caption">
-            <h3>Feature Label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>
-              <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-    <!-- /.row -->
+
 
     <hr>
 
