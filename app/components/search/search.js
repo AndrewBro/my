@@ -12,10 +12,9 @@ function postsService($http) {
   }
 }
 
-app.directive('searchBar', function() {
-  return {
+angular.module('myApp')
+  .component('searchBar', {
     templateUrl:"/components/search/search.html"
-  }
-});
 
+  });
 

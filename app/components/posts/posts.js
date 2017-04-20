@@ -16,10 +16,10 @@ function postCtrl($scope, postsService) {
 }
 
 
-app.directive('movieBlock', function() {
-    return {
-      templateUrl:"/components/posts/posts.html"
-    }
+angular.module('myApp')
+  .component('movieBlock', {
+    // templateUrl:"/components/search/search.html"
+    templateUrl:"/components/posts/posts.html"
   });
 
 
