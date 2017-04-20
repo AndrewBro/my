@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84e8636a-0619-4194-bc8d-73be36eeaba3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/github-16px.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/header.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/1x1.jpg" />
+    <list default="true" id="84e8636a-0619-4194-bc8d-73be36eeaba3" name="Default" comment="hm">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.gzip" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cli-table/node_modules/colors/screenshots/colors.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/diff/images/node_example.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/diff/images/web_example.png" />
@@ -41,200 +36,26 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yeoman-test/node_modules/istextorbinary/docs/assets/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Light.otf.woff" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yeoman-test/node_modules/istextorbinary/docs/assets/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/yeoman-test/node_modules/istextorbinary/docs/assets/fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Semibold.otf.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/scripts/components/post/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/scripts/components/post/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/scripts/controllers/post.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/scripts/controllers/post.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/components/post/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/post.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/postOutput.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/changelog.tpl.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/_app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/patternizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/rainbow-generic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/rainbow-html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/rainbow-javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/rainbow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/rainbow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/assets/smoothscroll-angular-custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/angular-mocks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/ngAnimateMock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/ngMock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/ngMockE2E.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular-mocks/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/AUTHORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/build/release-notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/build/release.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/jquery-migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/jquery-migrate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/benchmarker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/benchmarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/closest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/filter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/find.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/jquery-basis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/speed/slice.vs.concat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/ajax/jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/ajax/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/ajax/xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/event-alias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/intro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/outro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/sizzle-jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/src/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/.jshintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/csp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/ajax/unreleasedXHR.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/atom+xml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/badcall.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/badjson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/cleanScript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/core/cc_on.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/dashboard.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/dimensions/documentLarge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/dimensions/documentSmall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/echoData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/echoQuery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/errorWithText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/etag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/evalScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/event/longLoadScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/event/promiseReady.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/event/syncReady.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/headers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/if_modified_since.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/iframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/jquery-1.8.2.ajax_xhr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/json_obj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/jsonp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/manipulation/iframe-denied.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/name.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/nocontent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/absolute.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/body.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/fixed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/relative.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/static.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/offset/table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/params_html.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/readywaitasset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/readywaitloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/selector/html5_selector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/selector/sizzle_cache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/statusText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/support/bodyBackground.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/support/shrinkWrapBlocks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/support/testElementCrash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/test2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/test3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/testinit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/testrunner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/testsuite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/text.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/ua.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/with_fries.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/data/with_fries_over_jsonp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/delegatetest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/hovertest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/localfile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/networkerror.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/polluted.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/readywait.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/unit/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/components/jquery/test/xhtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/src/my-super-awesome-component/my-super-awesome-component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/src/my-super-awesome-component/test/my-super-awesome-component.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/validate-commit-msg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/header/header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/header/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/navigation/navigation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/posts/posts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/posts/posts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/posts/posts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/search/search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/search/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/search/search.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/angular/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cake" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cake.cmd" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/coffee" />
@@ -5820,15 +5641,22 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/zlib-browserify/readme.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/zlib-browserify/test/zlib.test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/zlib-browserify/zlib.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/my-super-awesome-component/my-super-awesome-component.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/data/data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.tmp/scripts/controllers/post.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.tmp/scripts/controllers/post.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/controllers/post.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/postOutput.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/template/my-super-awesome-component/my-super-awesome-component.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/scripts/controllers/http.js" afterPath="$PROJECT_DIR$/.tmp/scripts/controllers/http.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/scripts/controllers/http.js.map" afterPath="$PROJECT_DIR$/.tmp/scripts/controllers/http.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/http.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -5846,12 +5674,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="79" column="15" lean-forward="false" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
+            <state relative-caret-position="109">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -5861,17 +5687,27 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="http.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http.js">
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/search/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/posts/posts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -5883,6 +5719,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -5890,11 +5730,12 @@
     <findStrings>
       <find>jumbotron</find>
       <find>collapse</find>
-      <find>http</find>
       <find>ang</find>
       <find>app</find>
       <find>ng-app</find>
       <find>httpCtrl</find>
+      <find>http</find>
+      <find>controller</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -5904,7 +5745,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/header.js" />
         <option value="$PROJECT_DIR$/app/data/data.json" />
         <option value="$PROJECT_DIR$/app/scripts/main.js" />
@@ -5919,8 +5759,23 @@
         <option value="$PROJECT_DIR$/app/views/postOutput.html" />
         <option value="$PROJECT_DIR$/src/my-super-awesome-component/docs/demo.html" />
         <option value="$PROJECT_DIR$/test/spec/controllers/http1.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/http.js" />
+        <option value="$PROJECT_DIR$/app/components/navigation/navigation.html" />
+        <option value="$PROJECT_DIR$/app/components/header/header.html" />
+        <option value="$PROJECT_DIR$/app/components/search/search.scss" />
+        <option value="$PROJECT_DIR$/app/components/posts/posts.scss" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/components/posts/posts.html" />
+        <option value="$PROJECT_DIR$/app/components/header/header.css" />
+        <option value="$PROJECT_DIR$/app/components/search/search.html" />
+        <option value="$PROJECT_DIR$/app/components/search/search.js" />
+        <option value="$PROJECT_DIR$/app/comp.css" />
+        <option value="$PROJECT_DIR$/app/comp.js" />
+        <option value="$PROJECT_DIR$/app/components/posts/posts2.html" />
+        <option value="$PROJECT_DIR$/app/comp.html" />
+        <option value="$PROJECT_DIR$/app/components/posts/posts2.js" />
+        <option value="$PROJECT_DIR$/app/components/posts/posts.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -5955,7 +5810,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -5968,8 +5822,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -5979,8 +5928,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../route-master" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WEB\my\app\components\posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WEB\my\misc" />
       <recent name="E:\WEB\my" />
@@ -6078,27 +6032,36 @@
       <updated>1492156583855</updated>
       <workItem from="1492156585236" duration="15330000" />
       <workItem from="1492498647480" duration="5837000" />
-      <workItem from="1492587426980" duration="11645000" />
+      <workItem from="1492587426980" duration="24579000" />
+      <workItem from="1492627498947" duration="13649000" />
     </task>
+    <task id="LOCAL-00001" summary="hm">
+      <created>1492603097768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492603097768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32812000" />
+    <option name="totallyTimeSpent" value="59395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1363" height="735" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24848942" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293919" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6503378" sideWeight="0.5026296" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7398649" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9814189" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -6114,80 +6077,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="hm" />
+    <option name="LAST_COMMIT_MESSAGE" value="hm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="163" column="11" lean-forward="false" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ht.html" />
-    <entry file="file://$PROJECT_DIR$/app/views/name.html" />
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/header.js" />
     <entry file="file://$PROJECT_DIR$/app/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -6196,24 +6093,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.tmp/scripts/controllers/http.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/spec/controllers/header.js" />
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/modernizr/modernizr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -6224,98 +6113,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.tmp/scripts/controllers/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.tmp/scripts/main.js" />
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/postOutput.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/my-super-awesome-component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/components/post/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/my-super-awesome-component/my-super-awesome-component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/http1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/validate-commit-msg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http1.js" />
+    <entry file="file://$PROJECT_DIR$/app/data/data.json" />
+    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.js" />
+    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/my-super-awesome-component.js" />
+    <entry file="file://$PROJECT_DIR$/misc/src/my-super-awesome-component/docs/demo.html" />
+    <entry file="file://$PROJECT_DIR$/template/my-super-awesome-component/my-super-awesome-component.html" />
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/http1.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/angular/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/demo/_index.html" />
+    <entry file="file://$PROJECT_DIR$/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/demo/assets/app.js" />
+    <entry file="file://$PROJECT_DIR$/misc/demo/components/angular/index.js" />
+    <entry file="file://$PROJECT_DIR$/.tmp/scripts/main.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.tmp/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.tmp/scripts/controllers/post.component.js" />
+    <entry file="file://$PROJECT_DIR$/misc/demo/index.html" />
+    <entry file="file://$PROJECT_DIR$/.tmp/scripts/controllers/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/changelog.tpl.md" />
+    <entry file="file://$PROJECT_DIR$/misc/validate-commit-msg.js" />
+    <entry file="file://$PROJECT_DIR$/app/apple-touch-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/header/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/post.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/postOutput.html" />
+    <entry file="file://$PROJECT_DIR$/app/scripts/components/post/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/post.component.js" />
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/header/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/posts/posts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/navigation/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="69" lean-forward="true" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/search/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/comp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/comp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -6328,80 +6290,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/post.component.js">
+    <entry file="file://$PROJECT_DIR$/app/components/posts/posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3407">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/demo/_index.html">
+    <entry file="file://$PROJECT_DIR$/app/comp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/http.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/post.html">
+    <entry file="file://$PROJECT_DIR$/app/components/posts/posts2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/posts/posts2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="8" selection-end-column="11" />
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/posts/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="79" column="15" lean-forward="false" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
+        <state relative-caret-position="109">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>

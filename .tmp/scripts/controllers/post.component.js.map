@@ -1,1 +1,0 @@
-{"version":3,"sources":["controllers/post.component.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"post.component.js","sourcesContent":["// angular.module('myApp')\n//   .component('post', {\n//     templateUrl: '../../../views/post.html',\n//     controller: 'postCtrl',\n//     controllerAs: 'vm'\n//   });\n//\n"]}

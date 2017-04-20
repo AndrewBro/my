@@ -6,140 +6,57 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my</title>
-
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
+    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/search/search.scss">
+    <link rel="stylesheet" href="./components/posts/posts.scss">
+    <link rel="stylesheet" href="./styles/main.css">
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+
   </head>
 
-  <body  ng-controller="httpCtrl">
-  <!-- Navigation -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <body>
+    <!-- Navigation -->
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">kino GaRage</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Category</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
 
-        </ul>
-        <div class="col-lg-offset-6">
-          <div class="input-group search">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-               <button class="btn btn-default" type="button">Go!</button>
-              </span>
+      <!-- Header -->
+      <div ng-include src="'/components/header/header.html'"></div>
+
+
+
+
+      <habra-habr></habra-habr>
+
+      <!--<search-page>--><!--</search-page>-->
+
+     <!--<search-bar on-search="vm.search(text)"></search-bar>-->
+
+     <!--<movie-block ng-repeat="movie in vm.movies" model="vm.movie"></movie-block>-->
+
+
+
+
+        <div class="row text-center" ng-controller="postCtrl as vm" >
+          <div ng-include src="'/components/search/search.html'"></div>
+          <div ng-include src="'/components/posts/posts.html'" class="post"></div>
+        </div>
+
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Your Website 2014</p>
           </div>
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Jumbotron Header -->
-    <header class="jumbotron hero-spacer">
-      <h1>A Warm Welcome!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-      <p><a class="btn btn-primary btn-large">Call to action!</a>
-      </p>
-    </header>
-
-
-    <!-- Search -->
-    <div class="row text-center">
-
-      <form class="input-group" ng-submit="vm.search()">
-        <input type="text" class="form-control" placeholder="Search for..."
-               ng-model="vm.inputVal" ng-keydown="vm.searchQuery = vm.inputVal">
-        <span class="input-group-btn">
-          <button class="btn btn-secondary glyphicon glyphicon-search" type="submit"></button>
-        </span>
-      </form>
+      </footer>
 
     </div>
 
-
-    <div>
-      <h2>Lorem ipsum dolor sit.</h2>
-    </div>
-
-    <hr>
-
-    <!-- Title -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h3>Latest Features</h3>
-      </div>
-    </div>
-
-
-    <div class="col-md-3 col-sm-6 hero-feature">
-      <div class="thumbnail">
-        <img ng-src="{{post.Poster}}" alt="">
-        <div class="caption">
-          <h3>{{post.Title}}</h3>
-          <span>Year: {{post.Year}}</span>
-          <span>Runtime: {{post.Runtime}}</span>
-          <span>Genre: {{post.Genre}}</span>
-          <span>Director: {{post.Director}}</span>
-          <span>Actors: {{post.Actors}}</span>
-          <span>Plot: {{post.Plot}}</span>
-          <span>Country: {{post.Country}}</span>
-          <span>imdbRating: {{post.imdbRating}}</span>
-          <span>Production: {{post.Production}}</span>
-          <p>
-            <a href="#" class="btn btn-primary">Watch</a> <a href="#" class="btn btn-default">More Info</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy; Your Website 2014</p>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
+    <!-- Page Content -->
+    <div ng-include src="'/components/navigation/navigation.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -155,6 +72,7 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -176,6 +94,9 @@
     <!-- build:js scripts/main.js -->
     <script src="./scripts/main.js"></script>
     <script src="./scripts/controllers/http.js"></script>
+    <script src="./components/search/search.js"></script>
+    <script src="./components/posts/posts.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>
