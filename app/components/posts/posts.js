@@ -3,7 +3,7 @@ app.controller('postCtrl', postCtrl);
 postCtrl.$inject = ['$scope', 'postsService'];
 
 function postCtrl($scope, postsService) {
-  const vm = this;
+  var vm = this;
   vm.searchQuery = '';
   vm.post = null;
 
@@ -15,6 +15,14 @@ function postCtrl($scope, postsService) {
   };
 }
 
+// components/componentOne/index.js
+angular.module('myApp')
+  .component('movieBlock', {
+    templateUrl:"/components/posts/posts.html"
+    // template: '<h1>This is the Component One</h1>'
+  });
+
+
 
 // angular.module('myApp')
 //   .component('movieBlock', {
@@ -22,12 +30,3 @@ function postCtrl($scope, postsService) {
 //   });
 
 
-angular.module('myApp')
-  .component('movieBlock', {
-    require:  'ngChange',
-    bindings: {
-      onSearch: '&'
-    },
-    templateUrl:"/components/posts/posts.html",
-    controllerAs: 'ctrl'
-  });

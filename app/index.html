@@ -25,22 +25,19 @@
 
 
       <!--
-
       <search-page> </search-page>
 
       <search-bar on-search="vm.search(text)"></search-bar>
 
       <movie-block ng-repeat="movie in vm.movies" model="vm.movie"></movie-block>
-
         -->
-
 
 
       <div class="row text-center" ng-controller="postCtrl as vm" >
           <!--<div ng-include src="'/components/search/search.html'"></div>
           <div ng-include src="'/components/posts/posts.html'" class="post"></div>-->
-        <search-bar on-search="vm.search()"></search-bar>
-        <movie-block></movie-block>
+        <search-bar on-search="vm.search(text)"></search-bar>
+        <movie-block>{{vm.text}}</movie-block>
       </div>
 
     <hr>
