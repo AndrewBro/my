@@ -16,20 +16,12 @@ function postCtrl($scope, postsService) {
 }
 
 
-app.directive('habraHabr', function() {
+app.directive('movieBlock', function() {
     return {
-      template:"<span>Hello Habr!</span>"
+      templateUrl:"/components/posts/posts.html"
     }
   });
 
-
-
-// app.component('comp',{
-//   templateUrl: './comp.html',
-//   controller: [function () {
-//
-//   }]
-// });
 
 
 

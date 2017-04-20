@@ -26,7 +26,7 @@
 
 
 
-      <habra-habr></habra-habr>
+
 
       <!--<search-page>--><!--</search-page>-->
 
@@ -35,11 +35,11 @@
      <!--<movie-block ng-repeat="movie in vm.movies" model="vm.movie"></movie-block>-->
 
 
-
-
-        <div class="row text-center" ng-controller="postCtrl as vm" >
-          <div ng-include src="'/components/search/search.html'"></div>
-          <div ng-include src="'/components/posts/posts.html'" class="post"></div>
+      <div class="row text-center" ng-controller="postCtrl as vm" >
+          <!--<div ng-include src="'/components/search/search.html'"></div>-->
+          <!--<div ng-include src="'/components/posts/posts.html'" class="post"></div>-->
+           <search-bar on-search="vm.search(searchQuery)"></search-bar>
+          <movie-block model="vm.movie"></movie-block>
         </div>
 
       <hr>
