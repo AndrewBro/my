@@ -16,14 +16,18 @@ function postCtrl($scope, postsService) {
 }
 
 
+// angular.module('myApp')
+//   .component('movieBlock', {
+//     templateUrl:"/components/posts/posts.html"
+//   });
+
+
 angular.module('myApp')
   .component('movieBlock', {
-    // templateUrl:"/components/search/search.html"
-    templateUrl:"/components/posts/posts.html"
+    require:  'ngChange',
+    bindings: {
+      onSearch: '&'
+    },
+    templateUrl:"/components/posts/posts.html",
+    controllerAs: 'ctrl'
   });
-
-
-
-
-
-

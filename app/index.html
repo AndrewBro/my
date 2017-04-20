@@ -9,8 +9,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="./components/header/header.css">
-    <link rel="stylesheet" href="./components/search/search.scss">
-    <link rel="stylesheet" href="./components/posts/posts.scss">
+    <link rel="stylesheet" href="components/search/search.scss">
+    <link rel="stylesheet" href="components/posts/posts.scss">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="/bower_components/modernizr/modernizr.js"></script>
 
@@ -24,25 +24,26 @@
       <div ng-include src="'/components/header/header.html'"></div>
 
 
+      <!--
 
+      <search-page> </search-page>
 
+      <search-bar on-search="vm.search(text)"></search-bar>
 
+      <movie-block ng-repeat="movie in vm.movies" model="vm.movie"></movie-block>
 
-      <!--<search-page>--><!--</search-page>-->
+        -->
 
-     <!--<search-bar on-search="vm.search(text)"></search-bar>-->
-
-     <!--<movie-block ng-repeat="movie in vm.movies" model="vm.movie"></movie-block>-->
 
 
       <div class="row text-center" ng-controller="postCtrl as vm" >
-          <!--<div ng-include src="'/components/search/search.html'"></div>-->
-          <!--<div ng-include src="'/components/posts/posts.html'" class="post"></div>-->
-           <search-bar></search-bar>
-          <movie-block model="vm.post"></movie-block>
-        </div>
+          <!--<div ng-include src="'/components/search/search.html'"></div>
+          <div ng-include src="'/components/posts/posts.html'" class="post"></div>-->
+        <search-bar on-search="vm.search()"></search-bar>
+        <movie-block></movie-block>
+      </div>
 
-      <hr>
+    <hr>
 
       <!-- Footer -->
       <footer>

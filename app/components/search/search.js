@@ -17,4 +17,3 @@ angular.module('myApp')
     templateUrl:"/components/search/search.html"
 
   });
-
