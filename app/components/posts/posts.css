@@ -1,0 +1,14 @@
+
+parent img {
+  height: 25vmax !important;
+}
+
+.post p {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.post span a {
+  margin: 20px 0;
+}
+

@@ -1,18 +1,19 @@
 
-<div class="col-md-4 col-sm-6 hero-feature" ng-show="vm.post">
+<div class="col-md-3 col-sm-6 text-center" ng-show="$ctrl.movie">
 
-  <div class="thumbnail">
-    <img ng-src="{{vm.post.Poster}}" alt="">
-    <h2>{{vm.post.Title}}</h2>
-    <p><strong>Year:</strong> {{vm.post.Year}}</p>
-    <p><strong>Runtime:</strong> {{vm.post.Runtime}}</p>
-    <p><strong>Genre:</strong> {{vm.post.Genre}}</p>
-    <p><strong>Director:</strong> {{vm.post.Director}}</p>
-    <p><strong>Actors:</strong> {{vm.post.Actors}}</p>
-    <p><strong>Plot:</strong> {{vm.post.Plot}}</p>
-    <p><strong>Country:</strong> {{vm.post.Country}}</p>
-    <p><strong>imdbRating: </strong> {{vm.post.imdbRating}}</p>
-    <p><strong>Production: </strong> {{vm.post.Production}}</p>
+  <div class="thumbnail post">
+    <img ng-src="{{$ctrl.movie.Poster}}" alt="">
+    <h4>{{$ctrl.movie.Title}}</h4>
+    <p><strong>Year:</strong> {{$ctrl.movie.Year}}</p>
+
+    <!--<p><strong>Runtime:</strong> {{$ctrl.movie.Runtime}}</p>-->
+    <!--<p><strong>Genre:</strong> {{$ctrl.movie.Genre}}</p>-->
+    <!--<p><strong>Director:</strong> {{$ctrl.movie.Director}}</p>-->
+    <!--<p><strong>Actors:</strong> {{$ctrl.movie.Actors}}</p>-->
+    <!--<p><strong>Plot:</strong> {{$ctrl.movie.Plot}}</p>-->
+    <!--<p><strong>Country:</strong> {{$ctrl.movie.Country}}</p>-->
+    <!--<p><strong>imdbRating: </strong> {{$ctrl.movie.imdbRating}}</p>-->
+    <!--<p><strong>Production: </strong> {{$ctrl.movie.Production}}</p>-->
     <span>
       <a href="#" class="btn btn-primary">Watch</a>
       <a href="#" class="btn btn-default">More Info</a>

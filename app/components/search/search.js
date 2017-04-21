@@ -1,4 +1,5 @@
 
+/*
 app.service('postsService', postsService);
 
 postsService.$inject = ['$http'];
@@ -13,6 +14,7 @@ function postsService($http) {
   };
 
 }
+*/
 
 
 

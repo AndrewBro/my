@@ -1,17 +1,44 @@
+angular.module('app', []);
 
-let app = angular.module('myApp', []);
+angular.module('app')
+  .component('parent', {
+    template:
+      `<component-two on-search="vm.search(text)"></component-two>
+       <component-one ng-repeat="movie in vm.movies" movie="movie"></component-one>`,
+    controller: function($http) {
+      var vm = this;
+      vm.movies=[];
+      vm.search = function(text) {
+        $http.get('http://www.omdbapi.com/',{
+          params: {
+            s: text
+          }
+        })
+          .then(resp => vm.movies = resp.data.Search);
+      }
+    },
+    controllerAs: 'vm'
+  });
 
-app.controller('postCtrl', function ($scope, $http) {
+// components/componentTwo/index.js
+angular.module('app')
+  .component('componentTwo', {
+    bindings: {
+      onSearch: '&'
+    },
+    // template: '<input type="text" ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model"/>',
+    templateUrl:"/components/search/search.html",
+    controllerAs: 'ctrl'
+  });
 
-  this.awesomeThings = [
-    'HTML5 Boilerplate',
-    'AngularJS',
-    'Karma'
-  ];
-
-});
-
-
+// components/componentOne/index.js
+angular.module('app')
+  .component('componentOne', {
+    bindings: {
+      movie: '<'
+    },
+    templateUrl:"/components/posts/posts.html",
+  });
 
 
 

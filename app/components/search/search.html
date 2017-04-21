@@ -1,8 +1,8 @@
 
-<!--<form class="input-group" ng-submit="vm.search()">-->
-<form class="input-group" ng-submit="vm.search()">
-<!--<form class="input-group" ng-change="ctrl.onSearch({searchQuery: ctrl.model})" ng-model="ctrl.model">-->
-  <input type="text" class="form-control" placeholder="Search for..." ng-model="vm.searchQuery">
+<form class="input-group" >
+  <input type="text" class="form-control" placeholder="Search for..."
+         ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model">
+  <!--<input type="text" class="form-control" placeholder="Search for..." ng-model="vm.searchQuery">-->
   <span class="input-group-btn">
     <button class="btn btn-secondary glyphicon glyphicon-search" type="submit"></button>
   </span>
@@ -11,5 +11,3 @@
 <hr>
 
 
-
-<!--ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model"-->

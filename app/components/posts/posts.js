@@ -1,36 +1,28 @@
 
-app.controller('postCtrl', postCtrl);
-
-postCtrl.$inject = ['$scope', 'postsService'];
-
-function postCtrl($scope, postsService) {
-  var vm = this;
-  vm.searchQuery = '';
-  vm.post = null;
-
-  vm.search = function() {
-      postsService.getData(vm.searchQuery)
-        .then(function(response) {
-          vm.post = response.data;
-        });
-  };
-}
-
-
-app.directive('movieBlock', function() {
-  return {
-    scope: true,
-    templateUrl: '/components/posts/posts.html'
-  };
-});
-
-
-
-
-
-
-
-
+// app.controller('postCtrl', postCtrl);
+//
+// postCtrl.$inject = ['$scope', 'postsService'];
+//
+// function postCtrl($scope, postsService) {
+//   var vm = this;
+//   vm.searchQuery = '';
+//   vm.post = null;
+//
+//   vm.search = function() {
+//       postsService.getData(vm.searchQuery)
+//         .then(function(response) {
+//           vm.post = response.data;
+//         });
+//   };
+// }
+//
+//
+// app.directive('movieBlock', function() {
+//   return {
+//     scope: true,
+//     templateUrl: '/components/posts/posts.html'
+//   };
+// });
 
 
 
