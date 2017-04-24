@@ -1,10 +1,10 @@
 angular.module('app', []);
 
 angular.module('app')
-  .component('parent', {
+  .component('searchPage', {
     template:
-      `<component-two on-search="vm.search(text)"></component-two>
-       <component-one ng-repeat="movie in vm.movies" movie="movie"></component-one>`,
+     `<search-bar on-search="vm.search(text)"></search-bar>
+     <movie-block ng-repeat="movie in vm.movies" movie="movie"></movie-block>`,
     controller: function($http) {
       var vm = this;
       vm.movies=[];
@@ -20,24 +20,23 @@ angular.module('app')
     controllerAs: 'vm'
   });
 
-// components/componentTwo/index.js
+
 angular.module('app')
-  .component('componentTwo', {
+  .component('searchBar', {
     bindings: {
       onSearch: '&'
     },
-    // template: '<input type="text" ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model"/>',
-    templateUrl:"/components/search/search.html",
+    templateUrl:"/components/search-page/movie-block/movie-block.html",
     controllerAs: 'ctrl'
   });
 
-// components/componentOne/index.js
+
 angular.module('app')
-  .component('componentOne', {
+  .component('movieBlock', {
     bindings: {
       movie: '<'
     },
-    templateUrl:"/components/posts/posts.html",
+    templateUrl:"/components/search-page/search-bar/search-bar.html",
   });
 
 
@@ -72,7 +71,7 @@ angular.module('app')
 // angular.module('myApp')
 //   .controller('postCtrl', function() {
 //     var vm = this;
-//     vm.search = function(text) {
+//     vm.movie-block = function(text) {
 //       console.log(text);
 //       vm.text = text;
 //     }
@@ -81,7 +80,7 @@ angular.module('app')
 // // components/componentOne/index.js
 // angular.module('myApp')
 //   .component('movieBlock', {
-//     templateUrl: '/components/posts/posts.html'
+//     templateUrl: '/components/movie-block-bar/movie-block-bar.html'
 //   });
 //
 // // components/componentTwo/index.js
@@ -90,7 +89,7 @@ angular.module('app')
 //     bindings: {
 //       onSearch: '&'
 //     },
-//     templateUrl:"/components/search/search.html",
+//     templateUrl:"/components/movie-block/movie-block.html",
 //     // template: '<input type="text" ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model"/>',
 //     controllerAs: 'ctrl'
 //   });

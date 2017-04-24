@@ -4536,8 +4536,8 @@ function parsePath (path) {
  *      var value = getPathValue(parsed, obj);
  *
  * @param {Object} parsed definition from `parsePath`.
- * @param {Object} object to search against
- * @param {Number} object to search against
+ * @param {Object} object to movie-block against
+ * @param {Number} object to movie-block against
  * @returns {Object|Undefined} value
  * @api private
  */

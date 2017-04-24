@@ -9,10 +9,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="./components/header/header.css">
-    <!--<link rel="stylesheet" href="components/search/search.scss">-->
-    <link rel="stylesheet" href="components/posts/posts.css">
+    <!--<link rel="stylesheet" href="componemovie-blockamovie-blockarch.scss">-->
+    <link rel="stylesheet" href="components/search-page/search-bar/search-bar.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <!--<link rel="stylesheet" href="components/posts/posts.scss">-->
+    <!--<link rel="stylesheet" href="componesearch-barosearch-barosts.scss">-->
     <script src="/bower_components/modernizr/modernizr.js"></script>
 
   </head>
@@ -21,22 +21,11 @@
     <!-- Navigation -->
     <div class="container">
 
-
       <!-- Header -->
       <div ng-include src="'/components/header/header.html'"></div>
 
-      <div>
-        <parent></parent>
-      </div>
-
-      <!--<div class="row text-center" ng-controller="postCtrl as vm" >-->
-        <!--<div ng-include src="'/components/search/search.html'"></div>-->
-        <!--&lt;!&ndash;<search-bar on-search="vm.search(searchQuery)"></search-bar>&ndash;&gt;-->
-        <!--<movie-block></movie-block>-->
-      <!--</div>-->
-
-    <hr>
-
+      <search-page></search-page>
+      <hr>
 
       <!-- Footer -->
       <footer>
@@ -68,7 +57,6 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -83,14 +71,12 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="./scripts/main.js"></script>
     <script src="./scripts/controllers/http.js"></script>
-    <script src="./components/search/search.js"></script>
-    <script src="./components/posts/posts.js"></script>
+    <script src="./components/search-page/movie-block/movie-block.js"></script>
+    <script src="components/search-page/search-bar/search-bar.js"></script>
 
-    <!-- endbuild -->
   </body>
 </html>

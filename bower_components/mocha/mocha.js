@@ -2781,7 +2781,7 @@ function HTML (runner) {
 }
 
 /**
- * Makes a URL, preserving querystring ("search") parameters.
+ * Makes a URL, preserving querystring ("movie-block") parameters.
  *
  * @param {string} s
  * @return {string} A new URL.
@@ -4609,7 +4609,7 @@ Runner.prototype.grep = function (re, invert) {
 };
 
 /**
- * Returns the number of tests matching the grep search for the
+ * Returns the number of tests matching the grep movie-block for the
  * given suite.
  *
  * @param {Suite} suite
@@ -7676,7 +7676,7 @@ Buffer.prototype.compare = function compare (target, start, end, thisStart, this
 // OR the last index of `val` in `buffer` at offset <= `byteOffset`.
 //
 // Arguments:
-// - buffer - a Buffer to search
+// - buffer - a Buffer to movie-block
 // - val - a string, Buffer, or number
 // - byteOffset - an index into `buffer`; will be clamped to an int32
 // - encoding - an optional encoding, relevant is val is a string
@@ -7696,7 +7696,7 @@ function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
   }
   byteOffset = +byteOffset  // Coerce to Number.
   if (isNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, movie-block whole buffer
     byteOffset = dir ? 0 : (buffer.length - 1)
   }
 
@@ -7715,7 +7715,7 @@ function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
     val = Buffer.from(val, encoding)
   }
 
-  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  // Finally, movie-block either indexOf (if dir is true) or lastIndexOf
   if (Buffer.isBuffer(val)) {
     // Special case: looking for empty string/buffer always fails
     if (val.length === 0) {
@@ -10768,7 +10768,7 @@ module.exports = Array.isArray || function (arr) {
           }
           // Recursively serialize objects and arrays.
           if (typeof value == "object") {
-            // Check for cyclic structures. This is a linear search; performance
+            // Check for cyclic structures. This is a linear movie-block; performance
             // is inversely proportional to the number of unique nested objects.
             for (length = stack.length; length--;) {
               if (stack[length] === value) {
