@@ -4,16 +4,16 @@ angular.module('myApp')
 Service.$inject = ['$http'];
 
 function Service($http) {
-  /**
-   * Promise
-   */
+
   this.getMovies = function (text, year) {
     return $http.get('http://www.omdbapi.com/', {
       params: {
-        s: text, year: year
+        y: year,
+        s: text
       },
     })
   };
+
 
   this.getFullMovie = function (imdbID) {
     return $http.get('http://www.omdbapi.com/', {
