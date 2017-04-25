@@ -631,7 +631,7 @@ config = {
 
 	QUnit.urlParams = urlParams;
 
-	// String movie-block anywhere in moduleName+testName
+	// String search-bar anywhere in moduleName+testName
 	config.filter = urlParams.filter;
 
 	// Exact match of the module name

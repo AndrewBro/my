@@ -2781,7 +2781,7 @@ function HTML (runner) {
 }
 
 /**
- * Makes a URL, preserving querystring ("movie-block") parameters.
+ * Makes a URL, preserving querystring ("search-bar") parameters.
  *
  * @param {string} s
  * @return {string} A new URL.
@@ -4609,7 +4609,7 @@ Runner.prototype.grep = function (re, invert) {
 };
 
 /**
- * Returns the number of tests matching the grep movie-block for the
+ * Returns the number of tests matching the grep search-bar for the
  * given suite.
  *
  * @param {Suite} suite
@@ -7676,7 +7676,7 @@ Buffer.prototype.compare = function compare (target, start, end, thisStart, this
 // OR the last index of `val` in `buffer` at offset <= `byteOffset`.
 //
 // Arguments:
-// - buffer - a Buffer to movie-block
+// - buffer - a Buffer to search-bar
 // - val - a string, Buffer, or number
 // - byteOffset - an index into `buffer`; will be clamped to an int32
 // - encoding - an optional encoding, relevant is val is a string
@@ -7696,7 +7696,7 @@ function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
   }
   byteOffset = +byteOffset  // Coerce to Number.
   if (isNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, movie-block whole buffer
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search-bar whole buffer
     byteOffset = dir ? 0 : (buffer.length - 1)
   }
 
@@ -7715,7 +7715,7 @@ function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
     val = Buffer.from(val, encoding)
   }
 
-  // Finally, movie-block either indexOf (if dir is true) or lastIndexOf
+  // Finally, search-bar either indexOf (if dir is true) or lastIndexOf
   if (Buffer.isBuffer(val)) {
     // Special case: looking for empty string/buffer always fails
     if (val.length === 0) {
@@ -10768,7 +10768,7 @@ module.exports = Array.isArray || function (arr) {
           }
           // Recursively serialize objects and arrays.
           if (typeof value == "object") {
-            // Check for cyclic structures. This is a linear movie-block; performance
+            // Check for cyclic structures. This is a linear search-bar; performance
             // is inversely proportional to the number of unique nested objects.
             for (length = stack.length; length--;) {
               if (stack[length] === value) {

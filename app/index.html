@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" ng-app="app">
+<html class="no-js" lang="" ng-app="myApp">
 
   <head>
     <meta charset="utf-8">
@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="./components/header/header.css">
-    <!--<link rel="stylesheet" href="componemovie-blockamovie-blockarch.scss">-->
-    <link rel="stylesheet" href="components/search-page/search-bar/search-bar.css">
     <link rel="stylesheet" href="./styles/main.css">
     <!--<link rel="stylesheet" href="componesearch-barosearch-barosts.scss">-->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -22,9 +18,12 @@
     <div class="container">
 
       <!-- Header -->
-      <div ng-include src="'/components/header/header.html'"></div>
+      <div ng-include src="'/scripts/components/header/header.html'"></div>
+
 
       <search-page></search-page>
+
+
       <hr>
 
       <!-- Footer -->
@@ -39,7 +38,7 @@
     </div>
 
     <!-- Page Content -->
-    <div ng-include src="'/components/navigation/navigation.html'"></div>
+    <div ng-include src="'/scripts/components/navigation/navigation.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -74,9 +73,6 @@
 
     <!-- build:js scripts/main.js -->
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/controllers/http.js"></script>
-    <script src="./components/search-page/movie-block/movie-block.js"></script>
-    <script src="components/search-page/search-bar/search-bar.js"></script>
 
   </body>
 </html>

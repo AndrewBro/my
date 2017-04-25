@@ -1,0 +1,47 @@
+<div ng-show="$ctrl.movie" ng-style="{opacity: $ctrl.movie.isDataLoaded ? 1 : 0.1}">
+
+
+    <img ng-if="$ctrl.movie.Poster != 'N/A'" ng-src="{{$ctrl.movie.Poster}}" alt="">
+    <img ng-if="$ctrl.movie.Poster == 'N/A'" src="http://placehold.it/300x423?text=no_poster" alt="N/A">
+    <h4>{{$ctrl.movie.Title}}</h4>
+    <p><strong>Year:</strong> {{$ctrl.movie.Year}}</p>
+    <p><strong>Type:</strong> {{$ctrl.movie.Type}}</p>
+    <p><strong>Genre:</strong> {{$ctrl.movie.Genre}}</p>
+    <p><strong>Director:</strong> {{$ctrl.movie.Director}}</p>
+    <p><strong>Actors:</strong> {{$ctrl.movie.Actors}}</p>
+    <p><strong>Plot:</strong> {{$ctrl.movie.Plot}}</p>
+    <p><strong>Country:</strong> {{$ctrl.movie.Country}}</p>
+    <p><strong>imdbRating: </strong> {{$ctrl.movie.imdbRating}}</p>
+    <p><strong>Production: </strong> {{$ctrl.movie.Production}}</p>
+    <span>
+          <a href="#" class="btn btn-primary">Show details</a>
+          <a href="#" class="btn btn-default">More Info</a>
+        </span>
+
+
+</div>
+
+
+<!--<div class="row-flex row-flex-wrap" ng-show="$ctrl.movie">-->
+
+<!--<div class="thumbnail col-sm-4">-->
+<!--<div class="well text-center">-->
+<!--<img ng-src="{{$ctrl.movie.Poster}}" alt="">-->
+<!--<h4>{{$ctrl.movie.Title}}</h4>-->
+<!--<p><strong>Year:</strong> {{$ctrl.movie.Year}}</p>-->
+<!--<p><strong>Type:</strong> {{$ctrl.movie.Type}}</p>-->
+<!--&lt;!&ndash;<p><strong>Genre:</strong> {{$ctrl.movie.Genre}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>Director:</strong> {{$ctrl.movie.Director}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>Actors:</strong> {{$ctrl.movie.Actors}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>Plot:</strong> {{$ctrl.movie.Plot}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>Country:</strong> {{$ctrl.movie.Country}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>imdbRating: </strong> {{$ctrl.movie.imdbRating}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p><strong>Production: </strong> {{$ctrl.movie.Production}}</p>&ndash;&gt;-->
+<!--<span>-->
+<!--<a href="#" class="btn btn-primary">Watch</a>-->
+<!--<a href="#" class="btn btn-default">More Info</a>-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+

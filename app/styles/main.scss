@@ -1,6 +1,9 @@
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../scripts/components/header/header";
+@import "../scripts/components/search-bar/search-bar";
+@import "../scripts/components/movie-block/movie-block";
 
 /* Space out content a bit */
 body {

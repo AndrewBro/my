@@ -1,6 +1,7 @@
 
 <form class="input-group" >
   <input type="text" class="form-control" placeholder="Search for..."
+         ng-model-options="{debounce: 600}"
          ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model">
   <!--<input type="text" class="form-control" placeholder="Search for..." ng-model="vm.searchQuery">-->
   <span class="input-group-btn">
