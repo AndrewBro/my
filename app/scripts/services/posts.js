@@ -7,11 +7,11 @@ function Service($http) {
   /**
    * Promise
    */
-  this.getMovies = function (text) {
+  this.getMovies = function (text, year) {
     return $http.get('http://www.omdbapi.com/', {
       params: {
-        s: text
-      }
+        s: text, year: year
+      },
     })
   };
 

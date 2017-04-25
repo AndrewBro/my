@@ -11,14 +11,14 @@ function Controller(postsService) {
   vm.movies = [];
 
 
-  vm.search = function (text) {
-    postsService.getMovies(text)
+  vm.search = function (text, year) {
+    postsService.getMovies(text, year)
       .then(function (resp) {
         vm.movies = resp.data.Search;
         getEachMovie(vm.movies);
       });
   };
-
+  
   function getEachMovie(list) {
     list.forEach(function (movie, index) {
       postsService.getFullMovie(movie.imdbID)

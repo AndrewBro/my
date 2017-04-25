@@ -39,8 +39,8 @@
       var vm = this;
       vm.movies = [];
 
-      vm.search = function (text) {
-        postsService.getMovies(text).then(function (resp) {
+      vm.search = function (text, year) {
+        postsService.getMovies(text, year).then(function (resp) {
           vm.movies = resp.data.Search;
           getEachMovie(vm.movies);
         });
@@ -73,10 +73,10 @@
       /**
        * Promise
        */
-      this.getMovies = function (text) {
+      this.getMovies = function (text, year) {
         return $http.get('http://www.omdbapi.com/', {
           params: {
-            s: text
+            s: text, year: year
           }
         });
       };
