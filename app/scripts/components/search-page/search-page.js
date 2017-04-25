@@ -24,9 +24,10 @@ function Controller(postsService) {
       postsService.getFullMovie(movie.imdbID)
         .then(function (resp) {
           vm.movies[index] = resp.data;
-          vm.movies[index].isDataLoaded = true;
+          // vm.movies[index].isDataLoaded = true;
         })
     });
   }
 
+  vm.search('2016'); // todo remove
 }

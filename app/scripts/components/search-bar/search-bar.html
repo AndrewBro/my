@@ -1,9 +1,52 @@
+<ol class="breadcrumb genre">
+  <li><a href="#" ng-click="vm.search(Star)">Animation</a></li>
+  <li><a href="#">Drama</a></li>
+  <li><a href="#">Documentary</a></li>
+  <li><a href="#">Biography</a></li>
+  <li><a href="#">Drama</a></li>
+  <li><a href="#">Sport</a></li>
+  <li><a href="#">Comedy</a></li>
+  <li><a href="#">Mystery</a></li>
+  <li><a href="#">Horror</a></li>
+</ol>
+
+<ol class="breadcrumb year">
+  <li><a href="#">Older</a></li>
+  <li><a href="#">1970-x</a></li>
+  <li><a href="#">1980-x</a></li>
+  <li><a href="#">1990-x</a></li>
+  <li><a href="#">2000-x</a></li>
+  <li><a href="#">2011</a></li>
+  <li><a href="#">2012</a></li>
+  <li><a href="#">2013</a></li>
+  <li><a href="#">2014</a></li>
+  <li><a href="#">2015</a></li>
+  <li><a href="#">2016</a></li>
+  <li><a href="#">New !</a></li>
+</ol>
+
+<ol class="breadcrumb type">
+  <li><a href="#">series</a></li>
+  <li><a href="#">movie</a></li>
+  <li><a href="#">episode</a></li>
+</ol>
+
+<!--Арт-хаус
+Боевики
+Документальные
+Драмы
+Исторические
+Комедии
+Приключения
+Семейные
+Спортивные
+Триллеры
+Ужасы
+Фантастика-->
 
 <form class="input-group" >
   <input type="text" class="form-control" placeholder="Search for..."
-         ng-model-options="{debounce: 600}"
          ng-change="ctrl.onSearch({text: ctrl.model})" ng-model="ctrl.model">
-  <!--<input type="text" class="form-control" placeholder="Search for..." ng-model="vm.searchQuery">-->
   <span class="input-group-btn">
     <button class="btn btn-secondary glyphicon glyphicon-search" type="submit"></button>
   </span>

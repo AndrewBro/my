@@ -50,10 +50,12 @@
         list.forEach(function (movie, index) {
           postsService.getFullMovie(movie.imdbID).then(function (resp) {
             vm.movies[index] = resp.data;
-            vm.movies[index].isDataLoaded = true;
+            // vm.movies[index].isDataLoaded = true;
           });
         });
       }
+
+      vm.search('2016'); // todo remove
     }
   }, {}], 4: [function (require, module, exports) {
     angular.module('myApp', []);

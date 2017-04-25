@@ -4,17 +4,20 @@
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
-  margin-left: -5px;
-  margin-right: -5px;
+  //margin-left: 35px;
+  //margin-right: 35px;
+}
 
+.movie-block p {
+  font-size: 11px ;
+  margin-bottom: 0;
 }
 
 .movie-block .well {
-  width: 300px;
-  max-width: 300px;
-  margin-right: 5px;
-  margin-left: 5px;
-
+  width: 250px;
+  max-width: 250px;
+  margin-right: 2.5%;
+  padding: 0.7%;
 }
 
 img {
@@ -23,11 +26,11 @@ img {
 
 @media (min-width: 768px) {
   .movie-block {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .movie-block .well {
-    min-width: 300px;
-    max-width: 500px;
+    min-width: 200px;
+    max-width: 300px;
   }
 }
