@@ -55,7 +55,7 @@
         });
       }
 
-      vm.search('2016'); // todo remove
+      // vm.search('2016'); // todo remove
     }
   }, {}], 4: [function (require, module, exports) {
     angular.module('myApp', []);

@@ -29,5 +29,5 @@ function Controller(postsService) {
     });
   }
 
-  vm.search('2016'); // todo remove
+  // vm.search('2016'); // todo remove
 }
