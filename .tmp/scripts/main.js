@@ -68,10 +68,10 @@
 
       vm.search = function (title, year, type) {
 
-        if (!title) {
-          alert('Please, enter title');
-          return;
-        }
+        // if (!title) {
+        //   alert('Please, enter title');
+        //   return;
+        // }
 
         postsService.getMovies(title, year, type).then(function (resp) {
           vm.movies = resp.data.Search;

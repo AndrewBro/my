@@ -1,4 +1,16 @@
 <div ng-submit="ctrl.search()">
+  <!--<div>-->
+    <!--<strong>Type:</strong>-->
+    <!--<span class="label label-default"-->
+          <!--ng-class="{'label-primary': ctrl.type == 'movie'}"-->
+          <!--ng-click="ctrl.type = 'movie'">movie</span>-->
+    <!--<span class="label label-default"-->
+          <!--ng-class="{'label-primary': ctrl.type == 'series'}"-->
+          <!--ng-click="ctrl.type = 'series'">series</span>-->
+    <!--<span class="label label-default"-->
+          <!--ng-class="{'label-primary': ctrl.type == 'episode'}"-->
+          <!--ng-click="ctrl.type = 'episode'">episode</span>-->
+  <!--</div>-->
 
   <ol class="breadcrumb genre">
     <li> Genre:</li>
@@ -12,6 +24,7 @@
     <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Mystery'})">Mystery</a></li>
     <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Horror'})">Horror</a></li>
   </ol>
+
 
   <ol class="breadcrumb year">
     <li> Year:</li>

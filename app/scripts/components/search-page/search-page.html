@@ -1,4 +1,5 @@
-<search-header poster="vmp.movies"></search-header>
+<search-header movies="vm.movies"></search-header>
+
 <search-bar on-search="vm.search(title, year, type)"></search-bar>
 <div class="movie-block">
   <movie-block ng-repeat="movie in vm.movies" movie="movie" class="well b"></movie-block>
