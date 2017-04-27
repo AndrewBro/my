@@ -1,59 +1,46 @@
-<div ng-submit="ctrl.onSearch({text: ctrl.model, year: ctrl.year})">
-  <ol class="breadcrumb genre">
-    <li> Genre: </li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Animation'})">Animation</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Drama'})">Drama</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Documentary'})">Documentary</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Biography'})">Biography</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Drama'})">Drama</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Sport'})">Sport</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Comedy'})">Comedy</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Mystery'})">Mystery</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Horror'})">Horror</a></li>
-  </ol>
+<div ng-submit="ctrl.search()">
+  <div>
+    <strong>Type:</strong>
+    <div class="btn-group" role="group">
+      <button type="button"
+              class="btn btn-default"
+              ng-class="{'btn-primary': ctrl.type == 'movie'}"
+              ng-click="ctrl.type = 'movie'">movie
+      </button>
+      <button type="button"
+              class="btn btn-default"
+              ng-class="{'btn-primary': ctrl.type == 'series'}"
+              ng-click="ctrl.type = 'series'">series
+      </button>
+      <button type="button"
+              class="btn btn-default"
+              ng-class="{'btn-primary': ctrl.type == 'episode'}"
+              ng-click="ctrl.type = 'episode'">episode
+      </button>
+    </div>
+  </div>
 
   <ol class="breadcrumb year">
-    <li> Year: </li>
+    <li> Year:</li>
     <li><a href="#">Older</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '1970'})">1970-x</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '1980'})">1980-x</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '1990'})">1990-x</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2000'})">2000-x</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2011'})">2011</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2012'})">2012</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2013'})">2013</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2014'})">2014</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2015'})">2015</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2016'})">2016</a></li>
-    <li><a href="#" ng-click="ctrl.onSearch({year: ctrl.year = '2017'})">New !</a></li>
+    <li><a href="#" ng-click="ctrl.year = '1970'">1970-x</a></li>
+    <li><a href="#" ng-click="ctrl.year = '1980'">1980-x</a></li>
+    <li><a href="#" ng-click="ctrl.year = '1990'">1990-x</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2000'">2000-x</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2011'">2011</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2012'">2012</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2013'">2013</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2014'">2014</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2015'">2015</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2016'">2016</a></li>
+    <li><a href="#" ng-click="ctrl.year = '2017'">New !</a></li>
   </ol>
 
-
-  <form name="myForm">
-    <label>
-      Enter your name:
-      <input type="text"
-             name="myName"
-             ng-model="name"
-             ng-minlength="5"
-             required />
-    </label>
-    <!--<pre>myForm.myName.$error = {{ myForm.myName.$error | json }}</pre>-->
-    <p>{{ myForm.myName.$error | json }}</p>
-
-    <div ng-messages="myForm.myName.$error" style="color:maroon" role="alert">
-      <div ng-message="required">You did not enter a field</div>
-      <div ng-message="minlength">Your field is too short</div>
-      <div ng-message="maxlength">Your field is too long</div>
-    </div>
-  </form>
-
-
-
   <form class="input-group">
-    <input type="text" class="form-control" placeholder="Search for..."
-           ng-change="ctrl.onSearch({text: ctrl.model, year: ctrl.year})" ng-model="ctrl.model">
-
+    <input type="text"
+           class="form-control"
+           placeholder="Search for..."
+           ng-model="ctrl.title">
     <span class="input-group-btn">
       <button class="btn btn-secondary glyphicon glyphicon-search" type="submit"></button>
     </span>

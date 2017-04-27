@@ -1,16 +1,12 @@
-<header class="jumbotron hero-spacer">
-  <h1>A Warm Welcome!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non
-    incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-  <p><a class="btn btn-primary btn-large">Call to action!</a>
-  </p>
 
+
+<header class="search-header">
+  <div uib-carousel interval="3000" active="vmp.active" style="height: 490px;">
+    <div uib-slide ng-repeat="poster in vmp.posters | limitTo: 3" index="$index">
+      <img ng-src="{{poster.Poster}}" alt="">
+    </div>
+  </div>
 </header>
 
-<!--<ul class="nav nav-tabs">-->
-  <!--<li role="presentation" class="active"><a href="#">Home</a></li>-->
-  <!--<li role="presentation"><a href="#">Profile</a></li>-->
-  <!--<li role="presentation"><a href="#">Messages</a></li>-->
-<!--</ul>-->
-<!--<br>-->
+
 

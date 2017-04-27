@@ -7,43 +7,36 @@ angular.module('myApp')
 
 Controller.$inject = ['postsService'];
 
-////////////
-angular.module('ngMessagesExample', ['ngMessages']);
-
 function Controller(postsService) {
   const vm = this;
   vm.movies = [];
   vm.title = '';
 
-  vm.search = function (text, year) {
-
-    if(text === undefined && vm.title === '') {
-
+  vm.search = function (title, year, type) {
+    if (!title) {
+      alert('Please, enter title');
+      return;
     }
-    vm.title = (text === undefined && vm.title !== '') ? vm.title :  'Comedy';
 
-
-    // vm.title = text || vm.title;
-
-    postsService.getMovies(vm.title, year)
+    postsService.getMovies(title, year, type)
       .then(function (resp) {
         vm.movies = resp.data.Search;
-        getEachMovie(vm.movies);
-        // console.log(vm.search)
+         getEachMovie(vm.movies);
       });
-
   };
 
-  function getEachMovie(list) {
 
+  function getEachMovie(list) {
     list.forEach(function (movie, index) {
       postsService.getFullMovie(movie.imdbID)
         .then(function (resp) {
           vm.movies[index] = resp.data;
-          // vm.movies[index].isDataLoaded = true;
         })
     });
   }
 
+  // resp.data.Search[0].Poster
+  // console.log(vm.search('test'));
   // vm.search('2016'); // todo remove
+  // console.log(postsService.movie )
 }

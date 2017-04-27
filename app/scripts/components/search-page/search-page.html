@@ -1,4 +1,5 @@
-<search-bar on-search="vm.search(text, year)"></search-bar>
-<div class=" movie-block">
-  <movie-block ng-repeat="movie in vm.movies" movie="movie" class="well"></movie-block>
+
+<search-bar on-search="vm.search(title, year, type)"></search-bar>
+<div class="movie-block">
+  <movie-block ng-repeat="movie in vm.movies" movie="movie" class="well b"></movie-block>
 </div>
