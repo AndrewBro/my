@@ -1,34 +1,16 @@
 angular.module('myApp')
   .component('searchHeader', {
     bindings: {
-      poster: '<'
+      movies: '<'
     },
     templateUrl: '/scripts/components/header/header.html',
-    controllerAs: 'vmp',
+    controllerAs: 'vm',
     controller: function () {
-      var vmp = this;
-      vmp.myInterval = 5000;
-      vmp.noWrapSlides = false;
-      vmp.active = 1;
+      var vm = this;
+      vm.myInterval = 5000;
+      vm.noWrapSlides = false;
+      vm.active = 1;
     }
   });
 
-Controller.$inject = ['postsService'];
 
-function Controller(postsService) {
-  const vmp = this;
-  vmp.poster = [];
-  vmp.title = '';
-
-  vmp.search = function (title) {
-
-    this.getPoster = function (text) {
-      return $http.get('http://www.omdbapi.com/', {
-        params: {
-          s: text,
-        },
-      })
-    };
-  };
-  vmp.search('2016')
-}

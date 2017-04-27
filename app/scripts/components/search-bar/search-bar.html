@@ -1,24 +1,17 @@
 <div ng-submit="ctrl.search()">
-  <div>
-    <strong>Type:</strong>
-    <div class="btn-group" role="group">
-      <button type="button"
-              class="btn btn-default"
-              ng-class="{'btn-primary': ctrl.type == 'movie'}"
-              ng-click="ctrl.type = 'movie'">movie
-      </button>
-      <button type="button"
-              class="btn btn-default"
-              ng-class="{'btn-primary': ctrl.type == 'series'}"
-              ng-click="ctrl.type = 'series'">series
-      </button>
-      <button type="button"
-              class="btn btn-default"
-              ng-class="{'btn-primary': ctrl.type == 'episode'}"
-              ng-click="ctrl.type = 'episode'">episode
-      </button>
-    </div>
-  </div>
+
+  <ol class="breadcrumb genre">
+    <li> Genre:</li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'movie'})">Animation</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'series'})">Drama</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'episodes'})">Documentary</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Biography'})">Biography</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Drama'})">Drama</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Sport'})">Sport</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Comedy'})">Comedy</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Mystery'})">Mystery</a></li>
+    <li><a href="#" ng-click="ctrl.onSearch({text: ctrl.text = 'Horror'})">Horror</a></li>
+  </ol>
 
   <ol class="breadcrumb year">
     <li> Year:</li>

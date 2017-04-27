@@ -12,7 +12,9 @@ function Controller(postsService) {
   vm.movies = [];
   vm.title = '';
 
+
   vm.search = function (title, year, type) {
+
     if (!title) {
       alert('Please, enter title');
       return;
@@ -21,7 +23,7 @@ function Controller(postsService) {
     postsService.getMovies(title, year, type)
       .then(function (resp) {
         vm.movies = resp.data.Search;
-         getEachMovie(vm.movies);
+        getEachMovie(vm.movies);
       });
   };
 
@@ -31,6 +33,7 @@ function Controller(postsService) {
       postsService.getFullMovie(movie.imdbID)
         .then(function (resp) {
           vm.movies[index] = resp.data;
+          // vm.movies[index].isDataLoaded = true;
         })
     });
   }
