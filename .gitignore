@@ -1,8 +1,8 @@
-
+.tmp/
 bower_components/
-**/node_modules
+node_modules/
 dist
-.test/bower_components
-.idea
+test/
+.idea/
 app/fonts/
 app/images/
