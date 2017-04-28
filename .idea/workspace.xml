@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84e8636a-0619-4194-bc8d-73be36eeaba3" name="Default" comment="hm">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/components/home/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/components/home/home.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/header/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/header/header.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/scripts/main.js" afterPath="$PROJECT_DIR$/.tmp/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/scripts/main.js.map" afterPath="$PROJECT_DIR$/.tmp/scripts/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/movie-block/movie-block.js" afterPath="$PROJECT_DIR$/app/scripts/components/movie-block/movie-block.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/navigation/navigation.html" afterPath="$PROJECT_DIR$/app/scripts/components/navigation/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/navigation/navigation.js" afterPath="$PROJECT_DIR$/app/scripts/components/navigation/navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/search-bar/search-bar.html" afterPath="$PROJECT_DIR$/app/scripts/components/search-bar/search-bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/search-bar/search-bar.scss" afterPath="$PROJECT_DIR$/app/scripts/components/search-bar/search-bar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.html" afterPath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.js" afterPath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.scss" afterPath="$PROJECT_DIR$/app/scripts/components/search-page/search-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/main.js" afterPath="$PROJECT_DIR$/app/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/scripts/components/header/search-header.js" afterPath="$PROJECT_DIR$/app/scripts/components/home/home.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +30,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -449,7 +429,7 @@
       <workItem from="1493192158162" duration="25167000" />
       <workItem from="1493234076003" duration="6338000" />
       <workItem from="1493276299317" duration="22813000" />
-      <workItem from="1493362811415" duration="17236000" />
+      <workItem from="1493362811415" duration="17429000" />
     </task>
     <task id="LOCAL-00001" summary="hm">
       <created>1492603097768</created>
@@ -462,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227899000" />
+    <option name="totallyTimeSpent" value="228092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,8 +813,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
