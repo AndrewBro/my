@@ -15,14 +15,14 @@
   </head>
 
   <body>
-    <div ui-view></div>
+
     <!-- Navigation -->
     <div class="container">
 
+      <!-- Page Content -->
+      <div ng-include src="'/scripts/components/navigation/navigation.html'"></div>
 
-
-      <search-page></search-page>
-      <hr>
+      <div ui-view></div>
 
       <!-- Footer -->
       <footer>
@@ -35,8 +35,6 @@
 
     </div>
 
-    <!-- Page Content -->
-    <div ng-include src="'/scripts/components/navigation/navigation.html'"></div>
 
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -67,9 +65,6 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-
-
-
 
     <!-- build:js scripts/main.js -->
     <script src="./scripts/main.js"></script>

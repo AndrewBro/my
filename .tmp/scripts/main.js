@@ -13,27 +13,50 @@
     s(r[o]);
   }return s;
 })({ 1: [function (require, module, exports) {
-    angular.module('myApp').component('searchHeader', {
+    angular.module('myApp').component('home-page', {
       bindings: {
         movies: '<'
       },
-      templateUrl: '/scripts/components/header/header.html',
+      templateUrl: '/scripts/components/home/home.html',
       controllerAs: 'vm',
       controller: function controller() {
         var vm = this;
         vm.myInterval = 5000;
         vm.noWrapSlides = false;
         vm.active = 1;
+
+        // vm.movies = config.topMovies
       }
     });
   }, {}], 2: [function (require, module, exports) {
     angular.module('myApp').component('movieBlock', {
       bindings: {
         movie: '<'
+        // movieId
       },
       templateUrl: '/scripts/components/movie-block/movie-block.html'
     });
+
+    // postsService.getFullMovie(movie.imdbID)
+    //   .then(function (resp) {
+    //     vm.movies[index] = resp.data;
+    //     // vm.movies[index].isDataLoaded = true;
+    //   })
   }, {}], 3: [function (require, module, exports) {
+
+    angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
+
+      $stateProvider.state('home', {
+        url: "/",
+        template: "<home-page movies=\"vm.movies\" class=\"home-page\"></home-page>"
+      }).state('search-page', {
+        url: "/search-page",
+        template: "<search-page class=\"search-page\"></search-page>"
+      });
+
+      $urlRouterProvider.otherwise('/home');
+    });
+  }, {}], 4: [function (require, module, exports) {
     angular.module('myApp').component('searchBar', {
       bindings: {
         onSearch: '&'
@@ -52,7 +75,7 @@
       }],
       controllerAs: 'ctrl'
     });
-  }, {}], 4: [function (require, module, exports) {
+  }, {}], 5: [function (require, module, exports) {
     angular.module('myApp').component('searchPage', {
       templateUrl: '/scripts/components/search-page/search-page.html',
       controller: Controller,
@@ -68,10 +91,13 @@
 
       vm.search = function (title, year, type) {
 
-        // if (!title) {
-        //   alert('Please, enter title');
-        //   return;
-        // }
+        if (!title) {
+          alert('Please, enter title');
+          return;
+        }
+
+        // vm.title = (type === undefined && vm.title !== '') ? vm.title : 'Drama';
+        // vm.title = text || vm.title;
 
         postsService.getMovies(title, year, type).then(function (resp) {
           vm.movies = resp.data.Search;
@@ -89,21 +115,20 @@
       }
 
       // resp.data.Search[0].Poster
-      // console.log(vm.search('test'));
-      // vm.search('2016'); // todo remove
-      // console.log(postsService.movie )
+      vm.search('2016'); // todo remove
     }
-  }, {}], 5: [function (require, module, exports) {
+  }, {}], 6: [function (require, module, exports) {
     angular.module('myApp', ['ui.bootstrap', 'ui.bootstrap.carousel', 'ui.router']);
 
     require('./services/posts');
     require('./components/search-page/search-page');
     require('./components/search-bar/search-bar');
     require('./components/movie-block/movie-block');
-    require('./components/header/search-header');
+    require('./components/home/home');
+    require('./components/navigation/navigation');
     require('angular-ui-bootstrap');
     require('angular-ui-router');
-  }, { "./components/header/search-header": 1, "./components/movie-block/movie-block": 2, "./components/search-bar/search-bar": 3, "./components/search-page/search-page": 4, "./services/posts": 6, "angular-ui-bootstrap": 8, "angular-ui-router": 9 }], 6: [function (require, module, exports) {
+  }, { "./components/home/home": 1, "./components/movie-block/movie-block": 2, "./components/navigation/navigation": 3, "./components/search-bar/search-bar": 4, "./components/search-page/search-page": 5, "./services/posts": 7, "angular-ui-bootstrap": 9, "angular-ui-router": 10 }], 7: [function (require, module, exports) {
     angular.module('myApp').service('postsService', Service);
 
     Service.$inject = ['$http'];
@@ -129,7 +154,7 @@
         });
       };
     }
-  }, {}], 7: [function (require, module, exports) {
+  }, {}], 8: [function (require, module, exports) {
     /*
      * angular-ui-bootstrap
      * http://angular-ui.github.io/bootstrap/
@@ -7456,11 +7481,11 @@
     angular.module('ui.bootstrap.typeahead').run(function () {
       !angular.$$csp().noInlineStyle && !angular.$$uibTypeaheadCss && angular.element(document).find('head').prepend('<style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style>');angular.$$uibTypeaheadCss = true;
     });
-  }, {}], 8: [function (require, module, exports) {
+  }, {}], 9: [function (require, module, exports) {
     require('./dist/ui-bootstrap-tpls');
 
     module.exports = 'ui.bootstrap';
-  }, { "./dist/ui-bootstrap-tpls": 7 }], 9: [function (require, module, exports) {
+  }, { "./dist/ui-bootstrap-tpls": 8 }], 10: [function (require, module, exports) {
     /**
      * State-based routing for AngularJS
      * @version v0.4.2
@@ -12275,5 +12300,5 @@
 
       angular.module('ui.router.state').filter('isState', $IsStateFilter).filter('includedByState', $IncludedByStateFilter);
     })(window, window.angular);
-  }, {}] }, {}, [5]);
+  }, {}] }, {}, [6]);
 //# sourceMappingURL=main.js.map

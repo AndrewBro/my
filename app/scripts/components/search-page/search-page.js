@@ -15,10 +15,13 @@ function Controller(postsService) {
 
   vm.search = function (title, year, type) {
 
-    // if (!title) {
-    //   alert('Please, enter title');
-    //   return;
-    // }
+    if (!title) {
+      alert('Please, enter title');
+      return;
+    }
+
+    // vm.title = (type === undefined && vm.title !== '') ? vm.title : 'Drama';
+    // vm.title = text || vm.title;
 
     postsService.getMovies(title, year, type)
       .then(function (resp) {
@@ -39,7 +42,5 @@ function Controller(postsService) {
   }
 
   // resp.data.Search[0].Poster
-  // console.log(vm.search('test'));
-  // vm.search('2016'); // todo remove
-  // console.log(postsService.movie )
+  vm.search('2016'); // todo remove
 }
