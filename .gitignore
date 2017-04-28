@@ -1,9 +1,8 @@
-.tmp
+.tmp/
 bower_components/
 **/node_modules
 dist
 .test/bower_components
-mics
-idea/
+.idea
 app/fonts/
 app/images/
