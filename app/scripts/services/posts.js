@@ -8,8 +8,8 @@ function Service($http) {
   this.getMovies = function (text, year, type) {
     return $http.get('http://www.omdbapi.com/', {
       params: {
-        y: year,
         s: text,
+        y: year,
         type: type
       },
     })

@@ -1,14 +1,24 @@
 angular.module('myApp')
   .component('movieBlock', {
     bindings: {
-      movie: '<'
-      // movieId
+      imdbId: '<'
     },
-    templateUrl: '/scripts/components/movie-block/movie-block.html',
+    controller: Controller,
+    controllerAs: 'mvVm',
+    templateUrl: '/scripts/components/movie-block/movie-block.html'
   });
 
-// postsService.getFullMovie(movie.imdbID)
-//   .then(function (resp) {
-//     vm.movies[index] = resp.data;
-//     // vm.movies[index].isDataLoaded = true;
-//   })
+
+Controller.$inject = ['$scope', 'postsService'];
+function Controller($scope, postsService) {
+  var vm = this;
+
+  vm.$onInit = function () {
+    console.log(vm.imdbId);
+    postsService.getFullMovie(vm.imdbId)
+      .then(function (resp) {
+        vm.movie = resp.data;
+      });
+  };
+
+}

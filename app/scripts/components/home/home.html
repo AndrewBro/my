@@ -1,15 +1,14 @@
-
 <header class="search-header">
-  <!--<movie-block movie-id="movieId" ng-repeat="movieId in vm.topMovies"></movie-block>-->
+  <!--<movie-block imdb-id="imdbID" ng-repeat="imdbID in vm.topMovies"></movie-block>-->
   <div uib-carousel interval="3000" active="vm.active" style="height: 490px;">
-    <div uib-slide ng-repeat="movie in vm.movies | limitTo: 1" index="$index" class="search-header-flex">
+    <div uib-slide ng-repeat="movie in (vm.movies | limitTo: 5)" index="$index" class="search-header-flex">
 
-        <img ng-src="{{movie.Poster}}" alt="">
+      <img ng-src="{{movie.Poster}}" alt="">
 
-        <h3><strong>{{movie.Title}}</strong></h3>
-        <p><strong>Year:</strong> {{movie.Year}}</p>
-        <p><strong>Year:</strong> {{movie.Year}}</p>
-        <p><strong>Type:</strong> {{movie.Type}}</p>
+      <h3><strong>{{movie.Title}}</strong></h3>
+      <p><strong>Year:</strong> {{movie.Year}}</p>
+      <p><strong>Year:</strong> {{movie.Year}}</p>
+      <p><strong>Type:</strong> {{movie.Type}}</p>
 
     </div>
   </div>

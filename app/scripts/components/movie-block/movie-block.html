@@ -1,20 +1,20 @@
-<a ng-show="$ctrl.movie" class="text-center" alt="Avatar" style="width:100%">
+<a ng-show="mvVm.movie" class="text-center" alt="Avatar" style="width:100%">
 
     <div class="postHover">
       <div class="text-center">
-        <img ng-if="$ctrl.movie.Poster != 'N/A'" ng-src="{{$ctrl.movie.Poster}}" alt="">
-        <img ng-if="$ctrl.movie.Poster == 'N/A'" src="http://placehold.it/300x423?text=no_poster" alt="N/A">
+        <img ng-if="mvVm.movie.Poster != 'N/A'" ng-src="{{mvVm.movie.Poster}}" alt="">
+        <img ng-if="mvVm.movie.Poster == 'N/A'" src="http://placehold.it/300x423?text=no_poster" alt="N/A">
       </div>
 
       <div>
-        <h3><strong>{{$ctrl.movie.Title}}</strong></h3>
-        <p><strong>Year:</strong> {{$ctrl.movie.Year}}</p>
-        <p><strong>Type:</strong> {{$ctrl.movie.Type}}</p>
-        <p><strong>Genre:</strong> {{$ctrl.movie.Genre}}</p>
-        <p><strong>Director:</strong> {{$ctrl.movie.Director}}</p>
-        <!--<p><strong>Actors:</strong> {{$ctrl.movie.Actors}}</p>-->
-        <!--<p><strong>Plot:</strong> {{$ctrl.movie.Plot}}</p>-->
-        <p><strong>Country:</strong> {{$ctrl.movie.Country}}</p>
+        <h3><strong>{{mvVm.movie.Title}}</strong></h3>
+        <p><strong>Year:</strong> {{mvVm.movie.Year}}</p>
+        <p><strong>Type:</strong> {{mvVm.movie.Type}}</p>
+        <p><strong>Genre:</strong> {{mvVm.movie.Genre}}</p>
+        <p><strong>Director:</strong> {{mvVm.movie.Director}}</p>
+        <!--<p><strong>Actors:</strong> {{mvVm.movie.Actors}}</p>-->
+        <!--<p><strong>Plot:</strong> {{mvVm.movie.Plot}}</p>-->
+        <p><strong>Country:</strong> {{mvVm.movie.Country}}</p>
       </div>
     </div>
 

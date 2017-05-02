@@ -22,24 +22,14 @@ function Controller(postsService) {
 
     // vm.title = (type === undefined && vm.title !== '') ? vm.title : 'Drama';
     // vm.title = text || vm.title;
+    vm.isDataLoaded = false;
 
     postsService.getMovies(title, year, type)
       .then(function (resp) {
         vm.movies = resp.data.Search;
-        getEachMovie(vm.movies);
+        vm.isDataLoaded = true;
       });
   };
-
-
-  function getEachMovie(list) {
-    list.forEach(function (movie, index) {
-      postsService.getFullMovie(movie.imdbID)
-        .then(function (resp) {
-          vm.movies[index] = resp.data;
-          // vm.movies[index].isDataLoaded = true;
-        })
-    });
-  }
 
   // resp.data.Search[0].Poster
   vm.search('2016'); // todo remove
