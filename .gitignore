@@ -1,9 +1,0 @@
-.tmp/
-bower_components/
-node_modules/
-dist
-test/
-.idea
-app/fonts/
-app/images/
-.gitignore
