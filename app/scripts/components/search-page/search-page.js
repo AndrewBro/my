@@ -28,6 +28,7 @@ function Controller(postsService) {
       .then(function (resp) {
         vm.movies = resp.data.Search;
         vm.isDataLoaded = true;
+
       });
   };
 
