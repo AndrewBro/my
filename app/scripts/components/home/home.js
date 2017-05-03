@@ -13,7 +13,6 @@ function Controller($scope, postsService) {
 
   postsService.getMovies('a', 2016)
     .then(function (response) {
-      console.log(response);
       vm.movies = response.data.Search;
 
       vm.myInterval = 5000;

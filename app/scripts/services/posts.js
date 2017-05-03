@@ -6,7 +6,7 @@ Service.$inject = ['$http'];
 function Service($http) {
 
   this.getMovies = function (text, year, type) {
-    return $http.get('http://www.omdbapi.com/', {
+    return $http.get('E:/WEB/data-base/', {
       params: {
         s: text,
         y: year,
@@ -16,11 +16,43 @@ function Service($http) {
   };
 
   this.getFullMovie = function (imdbID) {
-    return $http.get('http://www.omdbapi.com/', {
+    return $http.get('E:/WEB/data-base/', {
       params: {
-        i: imdbID,
-        plot: 'full'
+        i: imdbID
       }
     });
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// function Service($http) {
+//
+//   this.getMovies = function (text, year, type) {
+//     return $http.get('http://www.omdbapi.com/', {
+//       params: {
+//         s: text,
+//         y: year,
+//         type: type
+//       },
+//     })
+//   };
+//
+//   this.getFullMovie = function (imdbID) {
+//     return $http.get('http://www.omdbapi.com/', {
+//       params: {
+//         i: imdbID,
+//         plot: 'full'
+//       }
+//     });
+//   }
+// }

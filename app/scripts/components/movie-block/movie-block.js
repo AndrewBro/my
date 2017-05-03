@@ -14,7 +14,6 @@ function Controller($scope, postsService) {
   var vm = this;
 
   vm.$onInit = function () {
-    console.log(vm.imdbId);
     postsService.getFullMovie(vm.imdbId)
       .then(function (resp) {
         vm.movie = resp.data;
