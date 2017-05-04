@@ -5,24 +5,42 @@ Service.$inject = ['$http'];
 
 function Service($http) {
 
-  this.getMovies = function (text, year, type) {
-    return $http.get('E:/WEB/data-base/', {
-      params: {
-        s: text,
-        y: year,
-        type: type
-      },
-    })
-  };
 
-  this.getFullMovie = function (imdbID) {
-    return $http.get('E:/WEB/data-base/', {
+  this.getFullMovie = function () {
+    return $http.get('E:/WEB/data/', {
       params: {
-        i: imdbID
+        imdbID
       }
     });
-  }
+  };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
