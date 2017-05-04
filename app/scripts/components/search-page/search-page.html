@@ -1,5 +1,5 @@
 
 <search-bar on-search="vm.search(title, year, type)" class="search-bar"></search-bar>
 <div class="movie-block">
-  <movie-block ng-repeat="movie in vm.movies" imdb-id="movie.imdbID" class="well b" ng-if="vm.isDataLoaded"></movie-block>
+  <movie-block ng-repeat="movie in vm.movies" id="movie.id" class="well b" ng-if="vm.isDataLoaded"></movie-block>
 </div>

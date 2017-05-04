@@ -5,72 +5,15 @@ Service.$inject = ['$http'];
 
 function Service($http) {
 
-
-  this.getFullMovie = function () {
-    return $http.get('E:/WEB/data/', {
+  this.getMovies = function (text, year, type) {
+    return $http.get('http://localhost:3012/movies', {
       params: {
-        imdbID
-      }
-    });
+        t: text
+      },
+    })
   };
+
+  this.getFullMovie = function (id) {
+    return $http.get('http://localhost:3012/movies/' + id);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function Service($http) {
-//
-//   this.getMovies = function (text, year, type) {
-//     return $http.get('http://www.omdbapi.com/', {
-//       params: {
-//         s: text,
-//         y: year,
-//         type: type
-//       },
-//     })
-//   };
-//
-//   this.getFullMovie = function (imdbID) {
-//     return $http.get('http://www.omdbapi.com/', {
-//       params: {
-//         i: imdbID,
-//         plot: 'full'
-//       }
-//     });
-//   }
-// }
