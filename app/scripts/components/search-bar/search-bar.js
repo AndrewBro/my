@@ -15,9 +15,7 @@ angular.module('myApp')
           type: vm.type
         })
       }
-
     }],
     controllerAs: 'ctrl'
-
   });
 

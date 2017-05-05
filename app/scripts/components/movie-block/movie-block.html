@@ -1,38 +1,21 @@
-<a ng-show="mvVm.movie" class="text-center" alt="Avatar" style="width:100%">
+<a ng-show="vm" class="text-center" alt="Avatar" style="width:100%">
 
     <div class="postHover">
       <div class="text-center">
-        <img ng-if="mvVm.movie.Poster != 'N/A'" ng-src="{{mvVm.movie.Poster}}" alt="">
+        <img ng-if="vm.Poster != 'N/A'" ng-src="{vm.Poster}}" alt="">
       </div>
       <div>
-        <h3><strong>{{mvVm.movie.Title}}</strong></h3>
-        <h3><strong>{{mvVm.movie.About}}</strong></h3>
-        <p><strong>Genre:</strong> {{mvVm.movie.Genre}}</p>
-        <p><strong>Directed By:</strong> {{mvVm.movie.Directed}}</p>
-        <p><strong>Written By:</strong> {{mvVm.movie.Written}}</p>
-        <p><strong>In Theaters:</strong> {{mvVm.movie.Theaters}}</p>
-        <p><strong>Box Office:</strong> {{mvVm.movie.BoxOffice}}</p>
-        <p><strong>Runtime:</strong> {{mvVm.movie.Runtime}}</p>
-        <p><strong>Studio:</strong> {{mvVm.movie.Studio}}</p>
+        <h3><strong>{{vm.Title}}</strong></h3>
+        <h3><strong>{{vm.About}}</strong></h3>
+        <p><strong>Genre:</strong> {{vm.Genre}}</p>
+        <p><strong>Directed By:</strong> {{vm.Directed}}</p>
+        <p><strong>Written By:</strong> {{vm.Written}}</p>
+        <p><strong>In Theaters:</strong> {{vm.Theaters}}</p>
+        <p><strong>Box Office:</strong> {{vm.BoxOffice}}</p>
+        <p><strong>Runtime:</strong> {{vm.Runtime}}</p>
+        <p><strong>Studio:</strong> {{vm.Studio}}</p>
       </div>
     </div>
-
-
-
-      <!--<div class="text-center">
-        <img ng-if="mvVm.movie.Poster != 'N/A'" ng-src="{{mvVm.movie.Poster}}" alt="">
-        <img ng-if="mvVm.movie.Poster == 'N/A'" src="http://placehold.it/300x423?text=no_poster" alt="N/A">
-      </div>
-
-      <div>
-        <h3><strong>{{mvVm.movie.Title}}</strong></h3>
-        <p><strong>Year:</strong> {{mvVm.movie.Year}}</p>
-        <p><strong>Type:</strong> {{mvVm.movie.Type}}</p>
-        <p><strong>Genre:</strong> {{mvVm.movie.Genre}}</p>
-        <p><strong>Director:</strong> {{mvVm.movie.Director}}</p>
-        <p><strong>Country:</strong> {{mvVm.movie.Country}}</p>
-      </div>
-    </div>-->
 
     <div class="middle">
        <div class="text"><i class="glyphicon glyphicon-play"></i></div>

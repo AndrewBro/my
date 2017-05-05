@@ -11,7 +11,6 @@ my.use(bodyParser.urlencoded({extended: true}));
 
 var movies = [
   {
-    id: 1,
     Title: "GOING IN STYLE",
     Poster: "going_in_style.jpg",
     About: "Acclaimed filmmaker Guy Ritchie brings his dynamic style to the epic fantasy action adventure 'King Arthur: Legend of the Sword.' Starring Charlie Hunnam in the title role, the film is an iconoclastic take on the classic Excalibur myth, tracing Arthur's journey from the streets to the throne. When the child Arthur's father is murdered, Vortigern (Jude Law), Arthur's uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, his life is turned upside down and he is forced to acknowledge his true legacy...whether he likes it or not.",
@@ -24,7 +23,6 @@ var movies = [
     Studio: "Warner Bros. Pictures"
   },
   {
-    id: 2,
     Title: "KING ARTHUR: LEGEND OF THE SWORD",
     Poster: "king_arthur.jpg",
     About: "Acclaimed filmmaker Guy Ritchie brings his dynamic style to the epic fantasy action adventure 'King Arthur: Legend of the Sword.' Starring Charlie Hunnam in the title role, the film is an iconoclastic take on the classic Excalibur myth, tracing Arthur's journey from the streets to the throne. When the child Arthur's father is murdered, Vortigern (Jude Law), Arthur's uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, his life is turned upside down and he is forced to acknowledge his true legacy...whether he likes it or not.",
@@ -37,7 +35,6 @@ var movies = [
     Studio: "Warner Bros. Pictures"
   },
   {
-    id: 3,
     Title: "THE CIRCLE",
     Poster: "the_circle.jpg",
     About: "The Circle is a gripping modern thriller starring Emma Watson ('Harry Potter'), Tom Hanks ('Sully') and John Boyega ('Star Wars: The Force Awakens'). When Mae (Emma Watson) is hired to work for the world's largest and most powerful tech & social media company, she sees it as an opportunity of a lifetime. As she rises through the ranks, she is encouraged by the company's founder, Eamon Bailey (Tom Hanks), to engage in a groundbreaking experiment that pushes the boundaries of privacy, ethics and ultimately her personal freedom. Her participation in the experiment, and every decision she makes begin to affect the lives and future of her friends, family and that of humanity.",
@@ -50,7 +47,6 @@ var movies = [
     Studio: "Studio:	EuropaCorp / STXfilms"
   },
   {
-    id: 4,
     Title: "THE LOST CITY OF Z",
     Poster: "the_lost_city.jpg",
     About: "Based on author David Granns nonfiction bestseller, 'The Lost City of Z' tells the incredible true story of British explorer Percy Fawcett (Charlie Hunnam), who journeys into the Amazon at the dawn of the 20th century and discovers evidence of a previously unknown, advanced civilization that may have once inhabited the region. Despite being ridiculed by the scientific establishment who regard indigenous populations as 'savages,' the determined Fawcett - supported by his devoted wife (Sienna Miller), son (Tom Holland) and aide-de-camp (Robert Pattinson) - returns time and again to his beloved jungle in an attempt to prove his case, culminating in his mysterious disappearance in 1925. An epically scaled tale of courage and passion, told in writer/director James Gray's classic filmmaking style, 'The Lost City of Z' is a stirring tribute to the exploratory spirit and a conflicted adventurer driven to the verge of obsession.",
@@ -63,7 +59,6 @@ var movies = [
     Studio: "Amazon Studios/Bleecker Street Media"
   },
   {
-    id: 5,
     Title: "THE PATRIOTS DAY BOMBING",
     Poster: "the_patriots_day.jpg",
     About: "The 2013 Boston Marathon terrorist attacks are recalled in this in-depth documentary through interviews with survivors and their families, as well as first responders, investigators, government officials and reporters from the Boston Globe. The film also uses surveillance video and home movies to recount the tragic events.",
@@ -76,7 +71,6 @@ var movies = [
     Studio: "HBO Documentary Films"
   },
   {
-    id: 6,
     Title: "THE SPACE BETWEEN US",
     Poster: "the_space_between_us.jpg",
     About: "In this interplanetary adventure, shortly after arriving to help colonize Mars, an astronaut dies while giving birth to the first human born on the red planet - never revealing who the father is. Thus begins the extraordinary life of Gardner Elliot - an inquisitive, highly intelligent boy who reaches the age of 16 having only met 14 people in his very unconventional upbringing. While searching for clues about his father, and the home planet he's never known, Gardner begins an online friendship with a street smart girl named Tulsa. When he finally gets a chance to go to Earth, Gardner is eager to experience all of the wonders he could only read about on Mars. But after his explorations begin, scientists discover that Gardner's organs can't withstand Earth's atmosphere. Gardner joins with Tulsa on a race against time to unravel the mysteries of how he came to be, and where he belongs in the universe.",
@@ -89,7 +83,6 @@ var movies = [
     Studio: "STX Entertainment"
   },
   {
-    id: 7,
     Title: "UNCANNY",
     Poster: "uncanny.jpg",
     About: "A reclusive inventor, his android creation, and a curious reporter are drawn together in a dark triangle in this psychological sci-fi drama.",
@@ -112,23 +105,21 @@ my.get('/', function (req, res) {
   res.send('Hello API !');
 });
 
-my.get('/movies', function (req, res) {
-  console.log(req.query);
+my.get('/movies/:_id', function (req, res) {
   db.collection('movies')
-    .find({Title: {'$regex': new RegExp(req.query.t)}})
-    .toArray(function (err, documents) {
-        if (err) throw err;
+    .findOne({_id: req.params.id})
+    .then(function (documents) {
+        console.log(documents);
         res.send(documents);
       }
     );
 });
 
-my.get('/movies/:id', function (req, res) {
+my.get('/movies', function (req, res) {
   db.collection('movies')
-    .find({Id: req.params.id})
+    .find({Title: {'$regex' : new RegExp(req.query.t ), "$options": "i"}})
     .toArray(function (err, documents) {
         if (err) throw err;
-        console.log(documents);
         res.send(documents);
       }
     );
@@ -137,7 +128,6 @@ my.get('/movies/:id', function (req, res) {
 my.post('/movies', function (req, res) {
   var movie = [
     {
-      id: 1,
       Title: "GOING IN STYLE",
       Poster: "going_in_style.jpg",
       About: "Acclaimed filmmaker Guy Ritchie brings his dynamic style to the epic fantasy action adventure 'King Arthur: Legend of the Sword.' Starring Charlie Hunnam in the title role, the film is an iconoclastic take on the classic Excalibur myth, tracing Arthur's journey from the streets to the throne. When the child Arthur's father is murdered, Vortigern (Jude Law), Arthur's uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, his life is turned upside down and he is forced to acknowledge his true legacy...whether he likes it or not.",
@@ -150,7 +140,6 @@ my.post('/movies', function (req, res) {
       Studio: "Warner Bros. Pictures"
     },
     {
-      id: 2,
       Title: "KING ARTHUR: LEGEND OF THE SWORD",
       Poster: "king_arthur.jpg",
       About: "Acclaimed filmmaker Guy Ritchie brings his dynamic style to the epic fantasy action adventure 'King Arthur: Legend of the Sword.' Starring Charlie Hunnam in the title role, the film is an iconoclastic take on the classic Excalibur myth, tracing Arthur's journey from the streets to the throne. When the child Arthur's father is murdered, Vortigern (Jude Law), Arthur's uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, his life is turned upside down and he is forced to acknowledge his true legacy...whether he likes it or not.",
@@ -163,7 +152,6 @@ my.post('/movies', function (req, res) {
       Studio: "Warner Bros. Pictures"
     },
     {
-      id: 3,
       Title: "THE CIRCLE",
       Poster: "the_circle.jpg",
       About: "The Circle is a gripping modern thriller starring Emma Watson ('Harry Potter'), Tom Hanks ('Sully') and John Boyega ('Star Wars: The Force Awakens'). When Mae (Emma Watson) is hired to work for the world's largest and most powerful tech & social media company, she sees it as an opportunity of a lifetime. As she rises through the ranks, she is encouraged by the company's founder, Eamon Bailey (Tom Hanks), to engage in a groundbreaking experiment that pushes the boundaries of privacy, ethics and ultimately her personal freedom. Her participation in the experiment, and every decision she makes begin to affect the lives and future of her friends, family and that of humanity.",
@@ -176,7 +164,6 @@ my.post('/movies', function (req, res) {
       Studio: "Studio:	EuropaCorp / STXfilms"
     },
     {
-      id: 4,
       Title: "THE LOST CITY OF Z",
       Poster: "the_lost_city.jpg",
       About: "Based on author David Granns nonfiction bestseller, 'The Lost City of Z' tells the incredible true story of British explorer Percy Fawcett (Charlie Hunnam), who journeys into the Amazon at the dawn of the 20th century and discovers evidence of a previously unknown, advanced civilization that may have once inhabited the region. Despite being ridiculed by the scientific establishment who regard indigenous populations as 'savages,' the determined Fawcett - supported by his devoted wife (Sienna Miller), son (Tom Holland) and aide-de-camp (Robert Pattinson) - returns time and again to his beloved jungle in an attempt to prove his case, culminating in his mysterious disappearance in 1925. An epically scaled tale of courage and passion, told in writer/director James Gray's classic filmmaking style, 'The Lost City of Z' is a stirring tribute to the exploratory spirit and a conflicted adventurer driven to the verge of obsession.",
@@ -189,7 +176,6 @@ my.post('/movies', function (req, res) {
       Studio: "Amazon Studios/Bleecker Street Media"
     },
     {
-      id: 5,
       Title: "THE PATRIOTS DAY BOMBING",
       Poster: "the_patriots_day.jpg",
       About: "The 2013 Boston Marathon terrorist attacks are recalled in this in-depth documentary through interviews with survivors and their families, as well as first responders, investigators, government officials and reporters from the Boston Globe. The film also uses surveillance video and home movies to recount the tragic events.",
@@ -202,7 +188,6 @@ my.post('/movies', function (req, res) {
       Studio: "HBO Documentary Films"
     },
     {
-      id: 6,
       Title: "THE SPACE BETWEEN US",
       Poster: "the_space_between_us.jpg",
       About: "In this interplanetary adventure, shortly after arriving to help colonize Mars, an astronaut dies while giving birth to the first human born on the red planet - never revealing who the father is. Thus begins the extraordinary life of Gardner Elliot - an inquisitive, highly intelligent boy who reaches the age of 16 having only met 14 people in his very unconventional upbringing. While searching for clues about his father, and the home planet he's never known, Gardner begins an online friendship with a street smart girl named Tulsa. When he finally gets a chance to go to Earth, Gardner is eager to experience all of the wonders he could only read about on Mars. But after his explorations begin, scientists discover that Gardner's organs can't withstand Earth's atmosphere. Gardner joins with Tulsa on a race against time to unravel the mysteries of how he came to be, and where he belongs in the universe.",
@@ -215,7 +200,6 @@ my.post('/movies', function (req, res) {
       Studio: "STX Entertainment"
     },
     {
-      id: 7,
       Title: "UNCANNY",
       Poster: "uncanny.jpg",
       About: "A reclusive inventor, his android creation, and a curious reporter are drawn together in a dark triangle in this psychological sci-fi drama.",
