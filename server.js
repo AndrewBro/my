@@ -105,11 +105,10 @@ my.get('/', function (req, res) {
   res.send('Hello API !');
 });
 
-my.get('/movies/:_id', function (req, res) {
+my.get('/movies/:id', function (req, res) {
   db.collection('movies')
     .findOne({_id: req.params.id})
     .then(function (documents) {
-        console.log(documents);
         res.send(documents);
       }
     );
@@ -119,7 +118,7 @@ my.get('/movies', function (req, res) {
   db.collection('movies')
     .find({Title: {'$regex' : new RegExp(req.query.t ), "$options": "i"}})
     .toArray(function (err, documents) {
-        if (err) throw err;
+
         res.send(documents);
       }
     );
@@ -230,6 +229,29 @@ MongoClient.connect('mongodb://localhost:27017/myapi', function (err, database) 
     console.log('API app started')
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // MongoClient.connect('mongodb://localhost:27017/myapi', function (err, database) {

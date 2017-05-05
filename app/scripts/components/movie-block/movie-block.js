@@ -13,15 +13,13 @@ angular.module('myApp')
 Controller.$inject = ['$scope', 'postsService'];
 function Controller($scope, postsService) {
   var vm = this;
-  // console.log(vm);
 
   vm.$onInit = function () {
 
-    postsService.getFullMovie(vm)
+    var mId = vm.id;
+    postsService.getFullMovie(mId)
       .then(function (resp) {
-
-        vm.movie = resp.data;
+        mId = resp.data;
       });
-    console.log(vm);
   };
 }

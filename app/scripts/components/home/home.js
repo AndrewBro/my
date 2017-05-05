@@ -6,18 +6,20 @@ angular.module('myApp')
     controller: Controller
   });
 
-Controller.$inject = ['$scope', 'postsService'];
 
+
+
+
+Controller.$inject = ['$scope', 'postsService'];
 function Controller($scope, postsService) {
   var vm = this;
 
-
-  postsService.getMovies('a', 2016)
+  postsService.getMovies()
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
       vm.movies = response.data.Search;
-
       vm.myInterval = 5000;
+
       vm.noWrapSlides = false;
       vm.active = 1;
     })
