@@ -6,12 +6,12 @@ angular.module('myApp')
 
     $stateProvider
       .state('home', {
-        url: "/",
-        template: `<home-page class="home-page"></home-page>`
+        url: '/',
+        template: '<home-page class="home-page"></home-page>'
       })
       .state('search-page', {
-        url: "/search-page",
-        template: `<search-page class="search-page"></search-page>`
+        url: '/search-page',
+        template: '<search-page class="search-page"></search-page>'
       });
 
     $urlRouterProvider.otherwise('/home');

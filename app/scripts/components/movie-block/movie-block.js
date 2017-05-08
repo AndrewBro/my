@@ -20,6 +20,7 @@ function Controller($scope, postsService) {
     postsService.getFullMovie(mId)
       .then(function (resp) {
         mId = resp.data;
+        // console.log(mId.Title, 'mId !!!!');
       });
   };
 }

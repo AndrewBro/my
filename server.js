@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
+var ObjectId = require('mongodb').ObjectId;
 
 var my = express();
 var db;
@@ -106,9 +107,12 @@ my.get('/', function (req, res) {
 });
 
 my.get('/movies/:id', function (req, res) {
+  console.log(req.params.id, 'DOCUMENT !');
+
   db.collection('movies')
-    .findOne({_id: req.params.id})
+    .findOne({_id: new ObjectId(req.params.id) })
     .then(function (documents) {
+      console.log(arguments, 'DOCUMENT !');
         res.send(documents);
       }
     );

@@ -2,18 +2,18 @@
 
     <div class="postHover">
       <div class="text-center">
-        <img ng-if="vm.Poster != 'N/A'" ng-src="{vm.Poster}}" alt="">
+        <img ng-if="vm.movie.Poster != 'N/A'" ng-src="{vm.movie.Poster}}" alt="">
       </div>
       <div>
-        <h3><strong>{{vm.Title}}</strong></h3>
-        <!--<h3><strong>{{vm.About}}</strong></h3>-->
-        <p><strong>Genre:</strong> {{vm.Genre}}</p>
-        <p><strong>Directed By:</strong> {{vm.Directed}}</p>
-        <p><strong>Written By:</strong> {{vm.Written}}</p>
-        <p><strong>In Theaters:</strong> {{vm.Theaters}}</p>
-        <p><strong>Box Office:</strong> {{vm.BoxOffice}}</p>
-        <p><strong>Runtime:</strong> {{vm.Runtime}}</p>
-        <p><strong>Studio:</strong> {{vm.Studio}}</p>
+        <h3><strong>{{vm.movie.Title}}</strong></h3>
+        <!--<h3><strong>{{vm.movie.About}}</strong></h3>-->
+        <p><strong>Genre:</strong> {{vm.movie.Genre}}</p>
+        <p><strong>Directed By:</strong> {{vm.movie.Directed}}</p>
+        <p><strong>Written By:</strong> {{vm.movie.Written}}</p>
+        <p><strong>In Theaters:</strong> {{vm.movie.Theaters}}</p>
+        <p><strong>Box Office:</strong> {{vm.movie.BoxOffice}}</p>
+        <p><strong>Runtime:</strong> {{vm.movie.Runtime}}</p>
+        <p><strong>Studio:</strong> {{vm.movie.Studio}}</p>
       </div>
     </div>
 

@@ -24,8 +24,8 @@ function Controller(postsService) {
     postsService.getMovies(title, year, type)
       .then(function (resp) {
         vm.movies = resp.data;
-
+        // console.log(vm.movies, 'vm.movies !!!!!');
         vm.isDataLoaded = true;
-      });
+    });
   };
 }

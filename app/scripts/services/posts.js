@@ -13,7 +13,9 @@ function Service($http) {
     })
   };
 
-  this.getFullMovie = function (id) {
-    return $http.get('http://localhost:3012/movies/' + id);
+
+  this.getFullMovie = function (mId) {
+    console.log(mId, 'MID !!!!');
+    return $http.get('http://localhost:3012/movies/' + mId);
   }
 }
